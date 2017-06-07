@@ -1,6 +1,3 @@
-var leapYear = function(year){
-  result false;
-};
 $(document).ready(function() {
     $("form#leap-year").submit(function(event) {
       event.preventDefault();
@@ -9,3 +6,12 @@ $(document).ready(function() {
       $("#result").text(result);
     });
   });
+
+
+  var leapYear = function(year) {
+      if (year % 4 === 0) {
+        return true;
+      } else {
+        return false;
+      }
+    };
